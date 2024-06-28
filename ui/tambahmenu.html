@@ -20,13 +20,11 @@
   <body>
     <div class="container">
       <button class="sidebar-toggle"><i class="material-icons">menu</i></button>
-
       <nav class="sidebar">
         <div class="sidebar-header">
           <h3>Admin Dashboard</h3>
           <p id="user-login"></p>
         </div>
-        
         <ul class="sidebar-menu">
           <li>
             <a href="index.html"
@@ -40,12 +38,12 @@
           </li>
           <li>
             <a href="kategori.html"
-              ><i class="material-icons">category</i>Data Kategori</a
+              ><i class="material-icons">category</i> Kategori</a
             >
           </li>
           <li>
             <a href="bahanbaku.html"
-              ><i class="material-icons">kitchen</i>Data Bahan Baku</a
+              ><i class="material-icons">kitchen</i> Bahan Baku</a
             >
           </li>
         </ul>
@@ -54,26 +52,29 @@
       <!-- content  -->
       <div class="main-content">
         <nav class="navbar">
-          <h2>Data Bahan Baku</h2>
+          <h2>Data Menu</h2>
           <div class="navbar-right">
             <a href="#" class="profile"
               ><i class="material-icons">account_circle</i> Admin</a
             >
           </div>
         </nav>
+        <!-- <br> -->
         <div class="content">
-          <!-- Add your dashboard content here -->
           <button class="add-category-btn" onclick="handleAddMenuClick()">
-            Tambah Bahan Baku
+            Tambah
           </button>
+
+          <!-- Add your dashboard content here -->
           <div class="category-section">
-            <h3>Bahan Baku</h3>
+            <h3>Menu Restoran</h3>
             <table class="category-table" id="product-table">
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Bahan Baku</th>
                   <th>Menu</th>
+                  <th>Kategori</th>
+                  <th>Bahan Baku</th>
                   <th>Aksi</th>
                 </tr>
               </thead>
@@ -84,7 +85,7 @@
           </div>
         </div>
       </div>
-      <!-- content end  -->
+      <!-- content end -->
     </div>
 
     <script
@@ -105,6 +106,11 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script src="./../assets/js/product-seller.js"></script>
     <script>
+      // klik button tambah
+      function handleAddMenuClick() {
+        // alert("Button Tambah clicked!");
+        // Tambahkan logika lain yang diinginkan di sini
+      }
       // Fungsi untuk logout
       async function logout() {
         try {
