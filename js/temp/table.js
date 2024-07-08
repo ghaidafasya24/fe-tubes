@@ -20,8 +20,9 @@ export let isiTabel = `
               #JUMLAH#
             </td>
             <td>
-             <a type="button"#IDEDIT# </a>
+             <button type="button"#IDEDIT# </button>
              <button type="button"#IDHAPUS# </button>
+             <button type="button"#DETAIL# </button>
             </td>
           </tr>
 `;
