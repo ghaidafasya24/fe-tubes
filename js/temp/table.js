@@ -21,9 +21,9 @@ export let isiTabel = `
               #JUMLAH#
             </td>
             <td>
-             <button type="button"#IDEDIT# </button>
-             <button type="button"#IDHAPUS# </button>
-             <button type="button"#DETAIL# </button>
+             <button type="button" href="edit.html?restoranId=#IDEDIT#">EDIT</button>
+             <button type="button" id="del_button" onclick="ConfirmDelete('#IDHAPUS#')">HAPUS </button>
+             <button type="button" href="detail.html?restoranId=#IDDETAIL#">DETAIL </button>
             </td>
           </tr>
 `;

@@ -15,7 +15,7 @@ function isiRow(value) {
             .replace("#IDEDIT#", value._id)
             .replace("#IDHAPUS#", value._id)
             .replace("#DETAIL#", value._id)
-            .replace("#WARNA#", getRandomColor())
-            .replace(/#WARNALOGO#/g, getRandomColorName());
+            // .replace("#WARNA#", getRandomColor())
+            // .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);
 }
