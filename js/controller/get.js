@@ -4,6 +4,12 @@ import { isiTabel } from "../temp/table.js";
 export function isiTableRestoran(results) {
     results.forEach(isiRow);
 }
+
+export function GetAllMenu(results) {
+    results.forEach(isiRow);
+}
+
+
 function isiRow(value) {
     let content =
         isiTabel.replace("#MENU#", value.menu)
