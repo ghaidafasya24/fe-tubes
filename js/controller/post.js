@@ -4,7 +4,7 @@ import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
     let data = {
-        nama: getValue("nama"),
+        menu: getValue("menu"),
         harga: parseFloat(getValue("harga")),
         deskripsi: getValue("deskripsi"),
         kategori: {

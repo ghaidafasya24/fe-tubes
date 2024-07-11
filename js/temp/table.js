@@ -16,6 +16,7 @@ export let isiTabel = `
             </td>
             <td class="text-truncate">#KATEGORI#</td>
             <td class="text-truncate">#BAHANBAKU#</td>
+            <td class="text-truncate">#JUMLAH#</td>
             <td>
               #JUMLAH#
             </td>
