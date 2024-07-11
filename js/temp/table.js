@@ -1,7 +1,8 @@
 export let isiTabel = 
 `
  <tbody>
-    <tr >  
+    <tr class="text-center">  
+    <td class="text-truncate">#ID#</td>
     <td class="text-truncate">#MENU#</td>
     <td class="text-truncate">#HARGA#</td>
     <td class="text-truncate">#DESKRIPSI#</td>
