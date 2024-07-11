@@ -13,7 +13,7 @@ function isiRow(value) {
             .replace("#HARGA#", value.harga)
             .replace("#DESKRIPSI#", value.deskripsi)
             .replace("#KATEGORI#", value.kategori.kategori)
-            .replace("#BAHANBAKU#", value.bahanbaku.bahanbaku)
+            .replace("#BAHANBAKU#", value.bahanbaku.bahan_baku)
             .replace("#JUMLAH#", value.bahanbaku.jumlah)
             .replace("#IDEDIT#", value._id)
             .replace("#IDHAPUS#", value._id)
