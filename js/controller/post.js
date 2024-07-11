@@ -1,31 +1,22 @@
 import { postData } from "https://bukulapak.github.io/api/process.js";
 import { onClick, getValue } from "https://bukulapak.github.io/element/process.js";
-import { urlPOST, AmbilResponse} from "../config/url_post.js";
+import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
-
-function pushData(){
-    var hari_kerja = getValue("hari_kerja");
-
+function pushData() {
     let data = {
-        longitude : parseFloat(getValue("longitude")),
-        latitude : parseFloat(getValue("latitude")),
-        location : getValue("location"),
-        checkin : getValue("checkin"),
-        phone_number : getValue("phone_number"),
-        biodata : {
-            nama : getValue("nama"),
-            phone_number : getValue("phone_number"),
-            jabatan : getValue("jabatan"),
-            jam_kerja : [{
-                durasi : parseInt(getValue("durasi")),
-                jam_masuk : getValue("jam_masuk"),
-                jam_keluar : getValue("jam_keluar"),
-            }],
-            hari_kerja : hari_kerja.split(",")
-        }
-    }
-    postData(urlPOST, data, AmbilResponse);
+        nama: getValue("nama"),
+        harga: parseFloat(getValue("harga")),
+        deskripsi: getValue("deskripsi"),
+        kategori: {
+            kategori: getValue("kategori"),
+        },
+        bahanbaku: {
+            bahanbaku: getValue("bahanbaku"),
+            jumlah: getValue("jumlah"),
+        },
+    };
 
+    postData(urlPOST, data, AmbilResponse);
 }
 
 onClick("button", pushData);
