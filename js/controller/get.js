@@ -6,7 +6,6 @@ export function GetAllMenu(results) {
     results.forEach(isiRow);
 }
 
-
 function isiRow(value) {
     let content =
         isiTabel.replace("#ID#", value._id)
@@ -18,7 +17,7 @@ function isiRow(value) {
             .replace("#JUMLAH#", value.bahan_baku.jumlah)
             .replace("#IDEDIT#", value._id)
             .replace("#IDHAPUS#", value._id)
-            .replace("#IDDETAIL#", value._id)
+            // .replace("#IDDETAIL#", value._id)
             // .replace("#WARNA#", getRandomColor())
             // .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);

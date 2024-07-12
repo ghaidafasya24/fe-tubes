@@ -12,7 +12,6 @@ export let isiTabel =
     <td class="text-truncate">
         <a class="text-truncate" type="button" href="edit.html?restoranId=#IDEDIT#">EDIT</a>
         <button class="text-truncate" type="button" id="del_button" onclick="ConfirmDelete('#IDHAPUS#')">DELETE</button>
-        <button class="text-truncate" type="button">DETAIL</button>
     </td>
     </tr>
 </tbody>
