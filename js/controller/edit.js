@@ -4,8 +4,8 @@ export function isiData(results) {
       { id: 'harga', path: 'harga' },
       { id: 'deskripsi', path: 'deskripsi' },
       { id: 'kategori', path: 'kategori.kategori' },
-      { id: 'bahan_baku', path: 'bahan_baku.bahan_baku' },
-      { id: 'jumlah', path: 'bahan_baku.jumlah' }
+      { id: 'bahan_baku', path: 'bahan_baku.bahan_baku'},
+      { id: 'jumlah', path: 'bahan_baku.jumlah'}
   ];
 
   inputMapping.forEach(({ id, path, index, property }) => {

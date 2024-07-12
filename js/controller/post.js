@@ -3,7 +3,8 @@ import { onClick, getValue } from "https://bukulapak.github.io/element/process.j
 import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
-    var bahan_baku = getValue("bahan_baku");
+    try {
+        var bahan_baku = getValue("bahan_baku");
 
         let data = {
             nama: getValue("nama"),
@@ -13,15 +14,26 @@ function pushData() {
                 kategori: getValue("kategori"),
             },
             bahan_baku: {
-                // bahan_baku: getValue("bahan_baku"),
-                bahan_baku : bahan_baku.split(","),
+                bahan_baku: bahan_baku.split(","),
                 jumlah: getValue("jumlah"),
             },
         };
 
-        postData(urlPOST, data, AmbilResponse);
-        alert('Data successfully saved!')
-   
+        postData(urlPOST, data, AmbilResponse)
+            .then(response => {
+                if (response.ok) {
+                    alert('Data successfully saved!');
+                    document.getElementById('menu_form').reset();
+                } else {
+                    alert('Terjadi kesalahan saat mengirim data.');
+                }
+            })
+            .catch(error => {
+                alert('Terjadi kesalahan: ' + error.message);
+            });
+    } catch (error) {
+        alert('Terjadi kesalahan: ' + error.message);
+    }
 }
 
 onClick("button", pushData);
