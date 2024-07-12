@@ -20,6 +20,7 @@ function pushData() {
         };
 
         postData(urlPOST, data, AmbilResponse);
+        alert('Data successfully saved!')
    
 }
 
