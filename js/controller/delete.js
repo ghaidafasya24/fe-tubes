@@ -5,7 +5,7 @@ function confirmDelete(IDHAPUS) {
 }
 
 function deleteData(IDHAPUS) {
-    var presensiId = IDHAPUS;
+    var restoranId = IDHAPUS;
     var target_url = "https://bp-tubes-c48fa88ca6a5.herokuapp.com/delete/" + restoranId;
 
     var requestOptions = {
