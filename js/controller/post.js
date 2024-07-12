@@ -3,7 +3,7 @@ import { onClick, getValue } from "https://bukulapak.github.io/element/process.j
 import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
-    var bahan_baku = getValue("bahan-baku");
+    var bahan_baku = getValue("bahan_baku");
 
         let data = {
             nama: getValue("nama"),
