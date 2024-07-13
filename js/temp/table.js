@@ -11,6 +11,7 @@ export let isiTabel =
     <td class="text-truncate">#JUMLAH#</td>
     <td class="text-truncate">
         <a class="text-truncate" type="button" href="edit.html?restoranId=#IDEDIT#">EDIT</a>
+        <a class="text-truncate" type="button" href="detail.html?restoranId=#IDDETAIL#">DETAIL</a>
         <button class="text-truncate btn-sm text-dark" type="button" id="del_button" onclick="confirmDelete('#IDHAPUS#')">DELETE</button>
     </td>
     </tr>

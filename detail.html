@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Detail Data Menu</title>
+    <title>Edit Data Menu</title>
 
     <meta name="description" content="" />
 
@@ -231,64 +231,67 @@
                 <div class="col-xxl">
                     <div class="card mb-4">
                       <div class="card-header d-flex align-items-center justify-content-between">
-                        <h5 class="mb-0">Detail Data Menu</h5>
+                        <h5 class="mb-0">Detail Menu</h5>
                         <!-- <small class="text-muted float-end">Default label</small> -->
                       </div>
                   
                       <div class="card-body">
-                        <form>
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">Nama Menu</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="basic-default-name"/>
-                            </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="nama">Nama Menu</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama menu" disabled/>
                           </div>
-                  
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-company">Harga</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="basic-default-company"/>
-                            </div>
+                        </div>
+  
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="harga">Harga</label>
+                          <div class="col-sm-10">
+                            <input type="number" class="form-control" id="harga" placeholder="Masukkan harga" disabled/>
                           </div>
-                  
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-message">Deskripsi</label>
-                            <div class="col-sm-10">
-                              <textarea
-                                id="basic-default-message"
-                                class="form-control"
-                                aria-label="Masukkan deskripsi menu"
-                                aria-describedby="basic-icon-default-message2"
-                              ></textarea>
-                            </div>
+                        </div>
+  
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="deskripsi">Deskripsi</label>
+                          <div class="col-sm-10">
+                            <input id="deskripsi" class="form-control" placeholder="Masukkan deskripsi menu"
+                              aria-label="Masukkan deskripsi menu"
+                              aria-describedby="basic-icon-default-message2" disabled></input>
                           </div>
-                  
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">Kategori</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="basic-default-name"/>
-                            </div>
+                        </div>
+  
+                        <div class="row mb-3"> 
+                          <label class="col-sm-2 col-form-label" for="kategori">Kategori</label>
+                          <div class="col-sm-10">
+                            <select id="kategori" class="form-select" disabled>
+                              <option hidden>Pilih Kategori</option>
+                              <option>Makanan</option>
+                              <option>Minuman</option>
+                              <option>Dessert</option>
+                            </select>
                           </div>
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">Bahan Baku</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="basic-default-name"/>
-                            </div>
+                        </div>
+  
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="bahan_baku">Bahan Baku</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="bahan_baku" placeholder="Masukkan bahan baku" disabled/>
                           </div>
-                  
-                          <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">Jumlah</label>
-                            <div class="col-sm-10">
-                              <input type="text" class="form-control" id="basic-default-name"/>
-                            </div>
+                        </div>
+  
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="jumlah">Jumlah</label>
+                          <div class="col-sm-10">
+                            <input type="number" class="form-control" id="jumlah"
+                              placeholder="Masukkan jumlah bahan baku" disabled/>
                           </div>
-                  
-                          <div class="row mb-3">
-                            <div class="col-sm-10 offset-sm-2 d-flex justify-content-start">
-                              <a href="index.html" class="btn btn-primary me-4">Kembali</a>
-                            </div>
+                        </div>
+  
+                        <div class="row mb-3">
+                          <div class="col-sm-10 offset-sm-2 d-flex justify-content-start">
+                            <a href="index.html" class="btn btn-primary me-4">Kembali</a>
+                            <!-- <button class="btn btn-primary" id="button">Edit</button> -->
                           </div>
-                        </form>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -330,5 +333,8 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="module" src="js/fetch_edit.js"></script>
+    <script type="module" src="js/config/url_put.js"></script>
+  <script type="module" src="js/controller/put.js"></script>
   </body>
 </html>
