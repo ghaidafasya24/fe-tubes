@@ -1,4 +1,5 @@
 export function isiData(results) {
+
   const inputMapping = [
       { id: 'nama', path: 'nama' },
       { id: 'harga', path: 'harga' },

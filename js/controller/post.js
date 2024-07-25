@@ -17,8 +17,8 @@ function pushData() {
   };
 
   console.log(data);
-  const nama = document.getElementById("nama");
-  const harga = document.getElementById("harga");
+  const nama = document.getElementById("nama"); //mengambil value dari input dengan id nama
+  const harga = document.getElementById("harga"); 
   const deskripsi = document.getElementById("deskripsi");
   const kategori = document.getElementById("kategori");
   const bahan_baku = document.getElementById("bahan_baku");

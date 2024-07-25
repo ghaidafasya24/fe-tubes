@@ -7,10 +7,12 @@ export function GetAllMenu(results) {
 }
 
 function isiRow(value) {
+    // Format the harga to Rupiah currency
+    let formattedHarga = value.harga.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
+
     let content =
-        isiTabel.replace("#ID#", value._id)
-            .replace("#MENU#", value.nama)
-            .replace("#HARGA#", value.harga)
+        isiTabel.replace("#MENU#", value.nama)
+            .replace("#HARGA#", formattedHarga)
             .replace("#DESKRIPSI#", value.deskripsi)
             .replace("#KATEGORI#", value.kategori.kategori)
             .replace("#BAHANBAKU#", value.bahan_baku.bahan_baku)
